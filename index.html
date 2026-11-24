@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unity Place — ресторан на Калинина, Чебоксары</title>
+<meta name="description" content="Unity Place в Чебоксарах: европейская и азиатская кухня, завтраки, ужины и караоке по выходным. ул. Калинина, 98.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{colors:{forest:'#0E2A22',cream:'#F2E9D8',copper:'#C08B5C',moss:'#22483C',sand:'#E4D7C0'},fontFamily:{display:['Marcellus','Georgia','serif'],sans:['Inter','system-ui','sans-serif']}}}}
+</script>
+<style>
+  body{background:#0E2A22;color:#F2E9D8}
+  .pick{transition:all .16s ease}
+  .pick[aria-pressed="true"]{background:#C08B5C;border-color:#C08B5C;color:#0E2A22}
+  .rule{border-color:rgba(242,233,216,.14)}
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<header class="sticky top-0 z-40 border-b rule bg-forest/90 backdrop-blur">
+  <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
+    <a href="#top" class="font-display text-xl tracking-[.14em]">UNITY PLACE</a>
+    <nav class="hidden gap-6 text-[11px] uppercase tracking-[.16em] text-cream/55 md:flex">
+      <a href="#menu" class="hover:text-copper">Меню</a><a href="#pick" class="hover:text-copper">Собрать ужин</a><a href="#contacts" class="hover:text-copper">Контакты</a>
+    </nav>
+    <a href="tel:+78352275537" class="rounded-full border border-cream/20 px-4 py-2 text-[11px] tracking-[.1em] hover:border-copper hover:text-copper">+7 (8352) 27-55-37</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="mx-auto grid max-w-5xl gap-8 px-5 pt-10 pb-12 md:grid-cols-[1.05fr_.95fr] md:items-center md:gap-12 md:pt-14">
+    <div>
+      <p class="text-[11px] uppercase tracking-[.3em] text-copper">Ресторан · Чебоксары · 5,0 ★</p>
+      <h1 class="mt-4 font-display text-[42px] leading-[1.05] sm:text-5xl md:text-[60px]">Европа и Азия<br>за одним<br><span class="text-copper">столом</span></h1>
+      <p class="mt-5 max-w-sm text-[15px] leading-relaxed text-cream/70">Unity Place на Калинина, 98: борщ и поке, лосось и лапша, завтраки до позднего вечера и караоке по выходным. Средний чек — 800–1 500 ₽.</p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="#pick" class="rounded-full bg-copper px-6 py-3 text-[12px] uppercase tracking-[.14em] text-forest hover:bg-cream">Собрать ужин</a>
+        <a href="https://vk.com/unityplace" target="_blank" rel="noopener" class="rounded-full border border-cream/20 px-6 py-3 text-[12px] uppercase tracking-[.14em] hover:border-copper hover:text-copper">Забронировать в ВК</a>
+      </div>
+      <p class="mt-5 text-[13px] text-cream/45">Пн–Чт, Вс 11:00–03:00 · Пт–Сб 11:00–05:00</p>
+    </div>
+    <figure>
+      <img src="https://avatars.mds.yandex.net/get-altay/15423471/2a000001969f7abb6d1cd3279a2ef069c9d4/XXXL" alt="Unity Place" class="aspect-[4/5] w-full object-cover">
+    </figure>
+  </section>
+
+  <section class="border-y rule bg-moss/40">
+    <div class="mx-auto grid max-w-5xl gap-6 px-5 py-9 sm:grid-cols-3">
+      <div><p class="font-display text-2xl text-copper">800–1 500 ₽</p><p class="mt-1 text-[13px] text-cream/60">средний чек — ужин с напитком</p></div>
+      <div><p class="font-display text-2xl text-copper">до 05:00</p><p class="mt-1 text-[13px] text-cream/60">в пятницу и субботу — с караоке</p></div>
+      <div><p class="font-display text-2xl text-copper">2 639</p><p class="mt-1 text-[13px] text-cream/60">оценок и 5,0 — «Хорошее место 2026»</p></div>
+    </div>
+  </section>
+
+  <section id="menu" class="mx-auto max-w-5xl px-5 py-14">
+    <div class="mb-7 flex flex-wrap items-end justify-between gap-3">
+      <div><p class="text-[11px] uppercase tracking-[.3em] text-copper">Меню</p><h2 class="mt-2 font-display text-4xl md:text-5xl">Что заказать</h2></div>
+      <p class="max-w-[230px] text-[12px] leading-relaxed text-cream/45">Позиции и цены из открытого меню. Кухня работает до закрытия.</p>
+    </div>
+    <div class="grid gap-2.5 sm:grid-cols-2">
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Борщ с говядиной и копчёным салом</span><span class="whitespace-nowrap">480 ₽</span></div>
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Салат с морепродуктами</span><span class="whitespace-nowrap">650 ₽</span></div>
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Мини шашлычки из креветок</span><span class="whitespace-nowrap">690 ₽</span></div>
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Жареная лапша с овощами и говядиной</span><span class="whitespace-nowrap">560 ₽</span></div>
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Лосось в азиатском стиле</span><span class="whitespace-nowrap">1 300 ₽</span></div>
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Поке с лососем</span><span class="whitespace-nowrap">590 ₽</span></div>
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Салат с утиной грудкой и апельсинами</span><span class="whitespace-nowrap">620 ₽</span></div>
+      <div class="flex justify-between gap-3 border-b rule pb-2 text-[14px]"><span>Поке с соусами на выбор</span><span class="whitespace-nowrap">от 370 ₽</span></div>
+    </div>
+  </section>
+
+  <section id="pick" class="border-y rule bg-moss/30">
+    <div class="mx-auto max-w-5xl px-5 py-14">
+      <div class="grid gap-9 md:grid-cols-[1.35fr_.65fr]">
+        <div>
+          <p class="text-[11px] uppercase tracking-[.3em] text-copper">Конструктор</p>
+          <h2 class="mt-2 font-display text-4xl md:text-5xl">Соберите ужин</h2>
+          <p class="mt-3 max-w-md text-[13px] leading-relaxed text-cream/60">Отметьте блюда — посчитаем сумму и подготовим сообщение для брони стола.</p>
+          <div class="mt-6 flex flex-wrap gap-2">
+            <button class="pick rounded-full border border-cream/25 px-4 py-2 text-[13px]" data-price="480" data-label="Борщ" aria-pressed="false">Борщ · 480 ₽</button>
+            <button class="pick rounded-full border border-cream/25 px-4 py-2 text-[13px]" data-price="650" data-label="Салат с морепродуктами" aria-pressed="false">Салат с морепродуктами · 650 ₽</button>
+            <button class="pick rounded-full border border-cream/25 px-4 py-2 text-[13px]" data-price="690" data-label="Креветки на гриле" aria-pressed="false">Креветки · 690 ₽</button>
+            <button class="pick rounded-full border border-cream/25 px-4 py-2 text-[13px]" data-price="560" data-label="Лапша с говядиной" aria-pressed="false">Лапша · 560 ₽</button>
+            <button class="pick rounded-full border border-cream/25 px-4 py-2 text-[13px]" data-price="1300" data-label="Лосось" aria-pressed="false">Лосось · 1 300 ₽</button>
+            <button class="pick rounded-full border border-cream/25 px-4 py-2 text-[13px]" data-price="590" data-label="Поке с лососем" aria-pressed="false">Поке · 590 ₽</button>
+            <button class="pick rounded-full border border-cream/25 px-4 py-2 text-[13px]" data-price="620" data-label="Салат с уткой" aria-pressed="false">Салат с уткой · 620 ₽</button>
+          </div>
+        </div>
+        <aside class="h-fit rounded-2xl border border-cream/15 p-5">
+          <p class="text-[10px] uppercase tracking-[.24em] text-cream/45">Ужин</p>
+          <ul id="pickList" class="mt-3 space-y-1.5 text-[13px] text-cream/85"></ul>
+          <div class="mt-4 flex items-baseline justify-between border-t border-cream/15 pt-3"><span class="text-[10px] uppercase tracking-[.2em] text-cream/45">Итого</span><span id="pickTotal" class="font-display text-3xl">0 ₽</span></div>
+          <a id="pickLink" href="https://vk.com/unityplace" target="_blank" rel="noopener" class="mt-4 block rounded-full bg-copper px-4 py-3 text-center text-[11px] uppercase tracking-[.14em] text-forest hover:bg-cream">Написать в Unity Place</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-5 py-14">
+    <h2 class="font-display text-4xl md:text-5xl">Зал</h2>
+    <div class="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
+      <img src="https://avatars.mds.yandex.net/get-altay/20420873/2a000001a05973ab88931c9f34d58c49ee6a/XXXL" alt="Unity Place, интерьер" loading="lazy" class="aspect-square w-full object-cover">
+      <img src="https://avatars.mds.yandex.net/get-altay/20744094/2a000001a05974045ce46e5caf83a9801f10/XXXL" alt="Unity Place, зал" loading="lazy" class="aspect-square w-full object-cover">
+      <img src="https://avatars.mds.yandex.net/get-altay/20219917/2a000001a059733c1ccc81154f149fc62a3f/XXXL" alt="Unity Place, детали" loading="lazy" class="aspect-square w-full object-cover">
+      <img src="https://avatars.mds.yandex.net/get-altay/14336229/2a00000197a08b0f62f97a089fcc84a5a678/XXXL" alt="Unity Place, стол" loading="lazy" class="aspect-square w-full object-cover">
+    </div>
+  </section>
+
+  <section id="contacts" class="border-t rule">
+    <div class="mx-auto grid max-w-5xl gap-7 px-5 py-11 md:grid-cols-3">
+      <div><p class="text-[10px] uppercase tracking-[.24em] text-cream/45">Адрес</p><p class="mt-1 font-display text-2xl">ул. Калинина, 98</p><p class="text-[13px] text-cream/55">Чебоксары</p><a href="https://yandex.ru/maps/org/unity_place/193572409480/" target="_blank" rel="noopener" class="mt-2 inline-block text-[12px] uppercase tracking-[.12em] text-copper">Маршрут →</a></div>
+      <div><p class="text-[10px] uppercase tracking-[.24em] text-cream/45">Часы</p><p class="mt-1 text-[14px]">Пн–Чт, Вс 11:00–03:00</p><p class="text-[14px]">Пт–Сб 11:00–05:00</p></div>
+      <div><p class="text-[10px] uppercase tracking-[.24em] text-cream/45">Связь</p><a href="tel:+78352275537" class="mt-1 block font-display text-xl hover:text-copper">+7 (8352) 27-55-37</a><a href="https://vk.com/unityplace" target="_blank" rel="noopener" class="mt-2 inline-block rounded-full border border-cream/25 px-4 py-2 text-[11px] uppercase tracking-[.12em] hover:border-copper hover:text-copper">ВКонтакте</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t rule">
+  <div class="mx-auto flex max-w-5xl flex-col gap-2 px-5 py-6 text-[10px] uppercase tracking-[.16em] text-cream/35 md:flex-row md:justify-between"><span>Unity Place · Чебоксары · 5,0 ★</span><span>Демо-концепт сайта · подготовлено для ресторана</span></div>
+</footer>
+
+<script>
+  const picks=[...document.querySelectorAll('.pick')],listEl=document.getElementById('pickList'),totalEl=document.getElementById('pickTotal'),linkEl=document.getElementById('pickLink');
+  function render(){
+    const picked=picks.filter(p=>p.getAttribute('aria-pressed')==='true');
+    const total=picked.reduce((s,p)=>s+Number(p.dataset.price),0);
+    listEl.innerHTML=picked.length?picked.map(p=>`<li class="flex justify-between gap-3"><span>${p.dataset.label}</span><span>${p.dataset.price} ₽</span></li>`).join(''):'<li class="text-cream/35">Пока пусто — выберите блюда.</li>';
+    totalEl.textContent=total.toLocaleString('ru-RU')+' ₽';
+    linkEl.dataset.msg=picked.length?('Здравствуйте! Хочу забронировать стол в Unity Place. Планируем заказ: '+picked.map(p=>p.dataset.label+' ('+p.dataset.price+' ₽)').join(', ')+'. Итого '+total+' ₽.'):'';
+  }
+  picks.forEach(p=>p.addEventListener('click',()=>{p.setAttribute('aria-pressed',p.getAttribute('aria-pressed')==='true'?'false':'true');render();}));
+  render();
+</script>
+</body>
+</html>
